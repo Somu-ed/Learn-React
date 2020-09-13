@@ -2,11 +2,13 @@ import React, {Component}  from 'react';
 
 class Ninjas extends Component {
     render(){
+        // console.log(this.props);
+        const {name, age, belt} = this.props;
         return(
             <div className="ninja">
-                <div>Name: Somu</div>
-                <div>Age: 21</div>
-                <div>Belt: black</div>
+                <div>Name: {name} </div>
+                <div>Age: {age} </div>
+                <div>Belt: {belt} </div>
             </div>
         )
     }
